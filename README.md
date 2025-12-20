@@ -5,7 +5,8 @@
 > <br>This is intended to provide a common implementation of Vigil and Grasp to to accelerate the setup process
 
 > [!TIP]
-> You don't need to retain this plugin if you copy the classes and content out and the guide will tell you to do this (but its optional)
+> You don't need to retain this plugin if you copy the classes and content out
+> <br>The guide will tell you to do this, but its optional
 
 This implementation features a UI with interaction prompt, as well as highlights for nearby interactables, and demo interactables, as well as custom Grasp Data extended with custom interaction text and description text.
 
@@ -24,10 +25,10 @@ https://github.com/user-attachments/assets/5a9b08ac-69e1-4e7b-a024-079808f982ca
 ### Collision
 
 Add the following channels to your project:
-Interaction - TraceChannel - Default: Ignore
-Grasp - ObjectChannel - Default: Ignore
 
-Add a "Grasp" preset - Query only - ObjectType Grasp - Ignore everything, except overlap Interaction channel
+* Interaction - TraceChannel - Default: Ignore
+* Grasp - ObjectChannel - Default: Ignore
+* Grasp - Preset - Query only - ObjectType Grasp - Ignore everything, except overlap Interaction channel
 
 Under GraspDeveloperSettings assign the Grasp profile then click "Set as Default"
 
@@ -44,6 +45,7 @@ Add the following plugins to your project:
 * [Vigil](https://github.com/Vaei/Vigil)
 * [Grasp](https://github.com/Vaei/Grasp)
 * [PlayWidgetAnimation](https://github.com/Vaei/PlayWidgetAnimation)
+* This Plugin
 
 > [!NOTE]
 > PlayWidgetAnimation provides the `PlayAnimationWithFinishedEventDuo` node that is used for widget animations, it is optional but you should add it, then replace it in the project before removing the plugin.
