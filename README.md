@@ -45,13 +45,13 @@ Add the following plugins to your project and enable them:
 * [PlayWidgetAnimation](https://github.com/Vaei/PlayWidgetAnimation)
 
 > [!NOTE]
-> PlayWidgetAnimation provides the `PlayAnimationWithFinishedEventDuo` node that is used for widget animations, it is optional but you should add it, then replace it in the project before removing the plugin.
+> PlayWidgetAnimation provides the `PlayAnimationWithFinishedEventDuo` node that is used for widget animations, it is optional but you should add it, then replace it in the project before removing the plugin if you do not wish to use it.
 
 ### Grasp Preset
 
 Under GraspDeveloperSettings assign the Grasp profile then click "Set as Default"
 
-### Add This Plugin
+## Add This Plugin
 
 Now add this plugin to your project.
 
