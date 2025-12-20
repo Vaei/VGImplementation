@@ -51,9 +51,44 @@ Add the following plugins to your project and enable them:
 
 Under GraspDeveloperSettings assign the Grasp profile then click "Set as Default"
 
-## Add This Plugin
+## This Plugin
 
 Now add this plugin to your project.
+
+### Migration
+
+> [!NOTE]
+> These steps are optional
+> <br>This plugin isn't intended to remain in your project but it is up to you whether you keep it or not
+> <br>Removing it will require some C++ familiarity and you might end up breaking things if you make a mistake or misunderstand a step
+
+Make sure your project is closed. Move the following classes out of the plugin and into your project:
+
+* `VGGraspData`
+* `VGInteractAbilityBase`
+* `VGStatics`
+
+Change the API macros from `VGIMPLEMENTATION_API` to your project's API macro.
+
+Add `"GameplayAbilities"`, `"GameplayTags"`, and `"Grasp"` to your `Build.cs` `PublicDependencyModuleNames`
+
+In your project's `DefaultEngine.ini` add these redirectors:
+
+```ini
+[CoreRedirects]
++ClassRedirects=(OldName="/Script/VGImplementation.VGStatics",NewName="/Script/MYPROJECTNAME.VGStatics")
++ClassRedirects=(OldName="/Script/VGImplementation.VGInteractAbilityBase",NewName="/Script/MYPROJECTNAME.VGInteractAbilityBase")
++ClassRedirects=(OldName="/Script/VGImplementation.VGGraspData",NewName="/Script/MYPROJECTNAME.VGGraspData")
+```
+
+> [!CAUTION]
+> You must change `MYPROJECTNAME` to match your project's module name
+
+Compile and open your project. Navigate to this plugin's content folder. Open the content one by one to ensure no errors occurred due to the migration process. There should be no errors pertaining to missing parent classes and the widgets should compile.
+
+Move the content out of the plugin and into your project.
+
+Close your project and delete this plugin entirely - we have now fully absorbed it into our project.
 
 ## Implementation
 
