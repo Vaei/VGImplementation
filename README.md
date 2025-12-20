@@ -1,19 +1,20 @@
 # Vigil + Grasp Implementation <img align="right" width=128, height=128 src="https://github.com/Vaei/Vigil/blob/main/Resources/Icon128.png">
 
 > [!IMPORTANT]
-> You can use this as a learning resource or you can fork and modify it for your own project
-> <br>This is intended to provide a very rapid implementation of Vigil and Grasp for you to accelerate the setup process immensely
+> You can use this as a learning resource or you can modify it for your own project after completing the setup guide
+> <br>This is intended to provide a common implementation of Vigil and Grasp to to accelerate the setup process
 
 > [!TIP]
-> You don't need to retain this plugin if you copy the classes and content out
-> <br>In this case, complete pre-setup, clone the plugin, then move the classes
-> <br>TODO consequences
+> You don't need to retain this plugin if you copy the classes and content out and the guide will tell you to do this (but its optional)
 
 This implementation features a UI with interaction prompt, as well as highlights for nearby interactables, and demo interactables, as well as custom Grasp Data extended with custom interaction text and description text.
 
 https://github.com/user-attachments/assets/5a9b08ac-69e1-4e7b-a024-079808f982ca
 
-# Setup
+# Setup Guide
+
+> [!NOTE]
+> This guide starts from the perspective of a new UE5.5 Third Person template project
 
 ## Pre-Setup
 
