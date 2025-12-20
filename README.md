@@ -98,13 +98,18 @@ Your Character or PlayerState must have a `UAbilitySystemComponent` (that you ca
 
 ### HUD
 
-Assign the included BP_HUD, or extract its functionality into your own
+Assign the included `BP_HUD` to your game mode, or extract its functionality into your own HUD class.
 
 ### PlayerController
 
+Create a PlayerController and assign it to your game mode.
+
 Add both a `BP_VG_VigilComponent` and `BP_VG_GraspComponent`
 
-OnPossess if PossessedPawn is valid, retrieve the `UAbilitySystemComponent` then call `InitializeGrasp()` on the Grasp Component. Then call `GiveAbility()` for the `VigilScan` ability.
+`OnPossess` if `PossessedPawn` is valid, retrieve the `UAbilitySystemComponent` then call `InitializeGrasp()` on the Grasp Component passing in the `GraspScan` ability. Then call `GiveAbility()` for the `VigilScan` ability.
+
+> [!WARNING]
+> Make sure you pass `GraspScan` and `VigilScan`, not the `GraspScanAbility` or `VigilScanAbility`
 
 <img width="1151" height="395" alt="image" src="https://github.com/user-attachments/assets/4e708a87-d040-44a5-b66e-798fee0f0704" />
 
