@@ -9,6 +9,10 @@
 > <br>In this case, complete pre-setup, clone the plugin, then move the classes
 > <br>TODO consequences
 
+This implementation features a UI with interaction prompt, as well as highlights for nearby interactables, and demo interactables, as well as custom Grasp Data extended with custom interaction text and description text.
+
+https://github.com/user-attachments/assets/5a9b08ac-69e1-4e7b-a024-079808f982ca
+
 # Setup
 
 ## Pre-Setup
@@ -57,11 +61,13 @@ Assign the included BP_HUD, or extract its functionality into your own
 
 Add both a `BP_VG_VigilComponent` and `BP_VG_GraspComponent`
 
-When input E is pressed call `InteractPressed()` function
-
 OnPossess if PossessedPawn is valid, retrieve the `UAbilitySystemComponent` then call `InitializeGrasp()` on the Grasp Component. Then call `GiveAbility()` for the `VigilScan` ability.
 
-TODO IMAGES
+<img width="1151" height="395" alt="image" src="https://github.com/user-attachments/assets/4e708a87-d040-44a5-b66e-798fee0f0704" />
+
+When input E is pressed activate Grasp
+
+<img width="1903" height="440" alt="image" src="https://github.com/user-attachments/assets/755f9746-a49b-4dd0-8b87-fc35d2c6ce23" />
 
 ### Interactable Ability
 
