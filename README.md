@@ -76,3 +76,8 @@ Open up the GA_Interactable_Demo and assign a montage to the `PlayMontageAndWait
 ### Interaction Options
 
 You might notice that up to 3 interaction options can be displayed along with the current interaction target. If you want to increase or decrease the number, then modify `W_InteractionHandler` by duplicating or removing them from `OptionPanel`
+
+# Changelog
+
+## 1.0.0
+* Initial Release
