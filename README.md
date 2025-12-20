@@ -28,9 +28,7 @@ Add the following channels to your project:
 
 * Interaction - TraceChannel - Default: Ignore
 * Grasp - ObjectChannel - Default: Ignore
-* Grasp - Preset - Query only - ObjectType Grasp - Ignore everything, except overlap Interaction channel
-
-Under GraspDeveloperSettings assign the Grasp profile then click "Set as Default"
+* Grasp - Preset - Query Only - ObjectType Grasp - Ignore everything, except overlap Interaction channel
 
 ### Gameplay Tags
 
@@ -40,15 +38,22 @@ Add the following gameplay tags:
 
 ### Plugins
 
-Add the following plugins to your project:
+Add the following plugins to your project and enable them:
 
 * [Vigil](https://github.com/Vaei/Vigil)
 * [Grasp](https://github.com/Vaei/Grasp)
 * [PlayWidgetAnimation](https://github.com/Vaei/PlayWidgetAnimation)
-* This Plugin
 
 > [!NOTE]
 > PlayWidgetAnimation provides the `PlayAnimationWithFinishedEventDuo` node that is used for widget animations, it is optional but you should add it, then replace it in the project before removing the plugin.
+
+### Grasp Preset
+
+Under GraspDeveloperSettings assign the Grasp profile then click "Set as Default"
+
+### Add This Plugin
+
+Now add this plugin to your project.
 
 ## Implementation
 
