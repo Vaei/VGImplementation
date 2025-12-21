@@ -60,7 +60,7 @@ Add the following plugins to your project and enable them:
 
 ### Grasp Preset
 
-Under GraspDeveloperSettings assign the Grasp profile then click "Set as Default"
+In Project Settings, under Grasp Developer Settings, assign the Grasp profile then click "Set as Default"
 
 ## This Plugin
 
@@ -83,11 +83,22 @@ Open `VG_GraspTargeting`, expand `GraspTargetSelection` and ensure `CollisionCha
 > <br>This plugin isn't intended to remain in your project but it is up to you whether you keep it or not
 > <br>Removing it will require some C++ familiarity and you might end up breaking things if you make a mistake or misunderstand a step
 
+> [!IMPORTANT]
+> If you are not comfortable compiling from an IDE add this to your `Config/DefaultEditorPerProjectUserSettings.ini`
+
+```ini
+[/Script/UnrealEd.EditorLoadingSavingSettings]
+bForceCompilationAtStartup=True
+```
+
 Make sure your project is closed. Move the following classes out of the plugin and into your project:
 
 * `VGGraspData`
 * `VGInteractAbilityBase`
 * `VGStatics`
+
+> [!WARNING]
+> Ensure these were moved and not copied, the originals must not exist
 
 Change the API macros from `VGIMPLEMENTATION_API` to your project's API macro.
 
