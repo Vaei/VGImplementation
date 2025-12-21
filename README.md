@@ -8,6 +8,9 @@
 > You don't need to retain this plugin if you copy the classes and content out
 > <br>The guide will tell you to do this, but its optional
 
+> [!NOTE]
+> Content engine version is UE5.6
+
 This implementation features a UI with interaction prompt, as well as highlights for nearby interactables, and demo interactables, as well as custom Grasp Data extended with custom interaction text and description text.
 
 https://github.com/user-attachments/assets/5a9b08ac-69e1-4e7b-a024-079808f982ca
