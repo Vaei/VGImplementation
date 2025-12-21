@@ -12,6 +12,14 @@ This implementation features a UI with interaction prompt, as well as highlights
 
 https://github.com/user-attachments/assets/5a9b08ac-69e1-4e7b-a024-079808f982ca
 
+# Plugin Guides
+
+Vigil and Grasp both have their own setup guides, you will want to familiarize yourself with these
+
+[Vigil](https://github.com/Vaei/Vigil/wiki)
+
+[Grasp](https://github.com/Vaei/Grasp/wiki)
+
 # Setup Guide
 
 > [!NOTE]
@@ -54,6 +62,16 @@ Under GraspDeveloperSettings assign the Grasp profile then click "Set as Default
 ## This Plugin
 
 Now add this plugin to your project.
+
+### Fix Collision Channel Assignments
+
+> [!WARNING]
+> This is vitally important because the engine references channels as `ECC_GameTraceChannel1` etc. instead of the channel name
+> <br>The included data assets often have incorrect channels assigned as a result
+
+Open `VG_VigilTargeting`, expand `VigilTargetSelection` and ensure `CollisionChannel` is `Interaction`
+
+Open `VG_GraspTargeting`, expand `GraspTargetSelection` and ensure `CollisionChannel` is `Grasp`
 
 ### Migration
 
@@ -120,6 +138,19 @@ When input E is pressed activate Grasp
 ### Interactable Ability
 
 Open up the GA_Interactable_Demo and assign a montage to the `PlayMontageAndWait` node - none are included here, so add anything you want for testing.
+
+## Testing
+
+Place a few `BP_Interactable_Demo` into your level, roughly at the height of the character's waist. PIE and you should see interaction prompts occurring. Pressing E when close enough should result in interaction.
+
+## Troubleshooting
+
+If no interaction prompt occurs:
+* `p.Vigil.Selection.Debug 1` - when near an interactable, does the cone turn red? If its only ever green, then its not detecting your graspable components
+  * Check the collision profile assigned is `Grasp` and that it is setup correctly as specified in this guide
+  * Check that the `CollisionChannel` assigned to `VG_GraspTargeting` is `Grasp` the `CollisionChannel` assigned to `VG_VigilTargeting` is `Interaction`
+
+## Extra
 
 ### Interaction Options
 
