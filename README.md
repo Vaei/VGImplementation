@@ -116,7 +116,9 @@ In your project's `DefaultEngine.ini` add these redirectors:
 > [!CAUTION]
 > You must change `MYPROJECTNAME` to match your project's module name
 
-Compile and open your project. Navigate to this plugin's content folder. Open the content one by one to ensure no errors occurred due to the migration process. There should be no errors pertaining to missing parent classes and the widgets should compile.
+Compile and open your project.
+
+Navigate to this plugin's content folder. Open the content one by one to ensure no errors occurred due to the migration process. There should be no errors pertaining to missing parent classes and the widgets should compile.
 
 Move the content out of the plugin and into your project.
 
@@ -126,7 +128,7 @@ Close your project and delete this plugin entirely - we have now fully absorbed 
 
 ### Ability System Component
 
-Your Character or PlayerState must have a `UAbilitySystemComponent` (that you can retrieve from your PlayerController during `OnPossess()`)
+Your Character or PlayerState must have a `UAbilitySystemComponent` (that you can retrieve from your PlayerController during `OnPossess()`). If in doubt, or if you will not use GAS for any other reason, add it to your Character.
 
 ### HUD
 
