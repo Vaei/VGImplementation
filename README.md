@@ -164,7 +164,12 @@ Place a few `BP_Interactable_Demo` into your level, roughly at the height of the
 If no interaction prompt occurs:
 * `p.Vigil.Selection.Debug 1` - when near an interactable, does the cone turn red? If its only ever green, then its not detecting your graspable components
   * Check the collision profile assigned is `Grasp` and that it is setup correctly as specified in this guide
-  * Check that the `CollisionChannel` assigned to `VG_GraspTargeting` is `Grasp` the `CollisionChannel` assigned to `VG_VigilTargeting` is `Interaction`
+  * Check that the `CollisionChannel` assigned to `VG_VigilTargeting` is `Interaction`
+
+If interaction prompt is always busy:
+* Check that the ability has been granted
+  * `ShowDebug AbilitySystem` then run 2x `AbilitySystem.Debug.NextCategory`
+  * Check that the `CollisionObjectTypes` assigned to `VG_GraspTargeting` includes `Grasp`
 
 ## Extra
 
