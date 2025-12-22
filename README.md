@@ -170,6 +170,9 @@ If interaction prompt is always busy:
 * Check that the ability has been granted
   * `ShowDebug AbilitySystem` then run 2x `AbilitySystem.Debug.NextCategory`
   * Check that the `CollisionObjectTypes` assigned to `VG_GraspTargeting` includes `Grasp`
+* Check interactable height and similar parameters are valid
+  * Set a breakpoint in `UGraspStatics::CanInteractWith` to find why its failing
+  * Try increasing parameters to be more generous to see if it resolves the issue
 
 ## Extra
 
