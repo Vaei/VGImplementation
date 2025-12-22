@@ -37,15 +37,15 @@ Vigil and Grasp both have their own setup guides, you will want to familiarize y
 
 Add the following channels to your project:
 
-* Interaction - TraceChannel - Default: Ignore
-* Grasp - ObjectChannel - Default: Ignore
-* Grasp - Preset - Query Only - ObjectType Grasp - Ignore everything, except overlap Interaction channel
+* `Interaction` - TraceChannel - Default: Ignore
+* `Grasp` - ObjectChannel - Default: Ignore
+* `Grasp` - Preset - Query Only - ObjectType Grasp - Ignore everything, except overlap Interaction channel
 
 ### Gameplay Tags
 
 Add the following gameplay tags:
 
-* Vigil.Interaction
+* `Vigil.Interaction`
 
 ### Plugins
 
