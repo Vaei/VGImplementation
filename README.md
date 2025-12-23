@@ -74,7 +74,7 @@ Now add this plugin to your project.
 
 Open `VG_VigilTargeting`, expand `VigilTargetSelection` and ensure `CollisionChannel` is `Interaction`
 
-Open `VG_GraspTargeting`, expand `GraspTargetSelection` and ensure `CollisionChannel` is `Grasp`
+Open `VG_GraspTargeting`, expand `GraspTargetSelection` and ensure `CollisionChannel` is `Grasp` and `CollisionObjectTypes` contains only `Grasp`
 
 ### Migration
 
