@@ -182,5 +182,10 @@ You might notice that up to 3 interaction options can be displayed along with th
 
 # Changelog
 
+## 1.0.1
+* Improved handling of widgets in relation to being outside of interaction angle/height bounds
+  * Modified `W_InteractableBase`: `EventConstruct`, `OnInteractableChanged`, `EventTick`
+  * Modified `W_InteractableTarget`: Remove `SetVisiblilityNone`
+
 ## 1.0.0
 * Initial Release
