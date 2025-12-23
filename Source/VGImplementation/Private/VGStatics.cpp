@@ -12,7 +12,7 @@
 
 const UVGGraspData* UVGStatics::GetVGGraspData(const UPrimitiveComponent* GraspableComponent)
 {
-	TRACE_CPUPROFILER_EVENT_SCOPE(UAhoySharedLib::GetAhoyGraspData);
+	TRACE_CPUPROFILER_EVENT_SCOPE(UVGStatics::GetVGGraspData);
 	
 	if (!GraspableComponent)
 	{
